@@ -4,13 +4,13 @@ error_reporting(0);
 $CONF = $TMPL = array();
 
 // The MySQL credentials
-$CONF['host'] = 'localhost';
-$CONF['user'] = 'YOURDBUSER';
-$CONF['pass'] = 'YOURDBPASS';
-$CONF['name'] = 'YOURDBNAME';
+$CONF['host'] = 'ec2-54-235-206-118.compute-1.amazonaws.com';
+$CONF['user'] = 'satemtrpfmhznn';
+$CONF['pass'] = '964eeb4c9e72f137ee39581f934d1de5dcf002a6c4ef39940b34ce1a4a4cff72';
+$CONF['name'] = 'd1frm0ohnpskbu';
 
 // The Installation URL
-$CONF['url'] = 'http://yourdomain.com';
+$CONF['url'] = 'https://tikle.herokuapp.com';
 
 // The Notifications e-mail
 $CONF['email'] = 'notifications@yourdomain.com';
@@ -35,6 +35,6 @@ $action = array('admin'			=> 'admin',
 				'page'			=> 'page',
 				'welcome'		=> 'welcome'
 				);
-				
+
 define('COOKIE_PATH', preg_replace('|https?://[^/]+|i', '', $CONF['url']).'/');
 ?>
